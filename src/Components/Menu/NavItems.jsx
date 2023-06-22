@@ -1,0 +1,27 @@
+export const LocalNavItems=[
+    {
+        key:"PrincipalInNavMenu",
+        link:"xxx",
+        caption:"Principal"
+    },
+    {
+        key:"WorksInNavMenu",
+        link:"xxx",
+        caption:"Trabajos"
+    },
+    {
+        key:"DesingsInNavMenu",
+        link:"xxx",
+        caption:"Diseños"
+    },
+    {
+        key:"HealtInNavMenu",
+        link:"xxx",
+        caption:"Higiene"
+    },
+    {
+        key:"TatuadorInNavMenu",
+        link:"xxx",
+        caption:"Tatuador"  
+    }
+]
