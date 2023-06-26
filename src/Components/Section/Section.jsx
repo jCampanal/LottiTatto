@@ -72,32 +72,14 @@ const Section=(props)=>{
     const intersectionLow=useIntersection(sectionRef,{
         root:null,
         rootMargin:'0px',
-        threshold:0.2
+        threshold:0.05
     })
 
-    /*
-    const intersectionMedium=useIntersection(sectionRef,{
-        root:null,
-        rootMargin:'0px',
-        threshold:0.3
-    })
-    const intersectionMediumHigh=useIntersection(sectionRef,{
-        root:null,
-        rootMargin:'0px',
-        threshold:0.65
-    })
-
-    const intersectionHigh=useIntersection(sectionRef,{
-        root:null,
-        rootMargin:'0px',
-        threshold:0.8
-    })
-    */
-
+  
     useEffect(() => {       
         if(intersectionLow)
             if(props.setShow){
-              props.setShow(intersectionLow.intersectionRatio>0.2);
+              props.setShow(intersectionLow.intersectionRatio>0.05);
         }
     }, [intersectionLow])
 

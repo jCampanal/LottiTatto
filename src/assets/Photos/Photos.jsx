@@ -34,6 +34,8 @@ import Tattoo1_2700 from './Photos2700/Tattoo3_1600x700.jpg'
 import Tattoo2_2700 from './Photos2700/Tattoo3_1600x700.jpg'
 import Tattoo3_2700 from './Photos2700/Tattoo3_1600x700.jpg'
 
+import LogoSrc from "./Logo/LottiTattoLogo.png"
+
 export const FirstPicture=[
     {
        key:'Tattoo1_300',
@@ -78,3 +80,7 @@ export const FirstPicture=[
     },
     
  ]
+
+ export const Logo={
+    Src: LogoSrc,
+    key:"Logo"}
