@@ -36,6 +36,25 @@ import Tattoo3_2700 from './Photos2700/Tattoo3_1600x700.jpg'
 
 import LogoSrc from "./Logo/LottiTattoLogo.png"
 
+import TattooSection from './General/Escultura griega.jpg'
+import DesignSection from './General/PrincesaMononoque.jpg'
+
+
+
+export const TattooSectionPicture=[
+    {
+        key: "TattooSectionPicture",
+        src: TattooSection
+    }
+]
+
+export const DesignSectionPicture=[
+    {
+        key: "DesignSectionPicture",
+        src: DesignSection
+    }
+]
+
 export const FirstPicture=[
     {
        key:'Tattoo1_300',
