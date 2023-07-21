@@ -1,11 +1,14 @@
 //#region Includes
 import { useState,useEffect } from "react";
 import Styled from "styled-components";
+import { Link } from "react-router-dom";
 //#endregion
 
 //#region CSS with styled
 const CustomizedFont=Styled.p`
 font-size:25xp;
+color:${(props)=>(props.Selected?'orange':'white')};
+text-decoration:none;
 `;
 
 const SuperiorDiv=Styled.div`
@@ -57,7 +60,9 @@ const NavButton=(props)=>{
             Show={CustomizedShow}>
             <CustomizedFont 
                 >
-                {props.children}
+                    <Link to={props.Link}>
+                        {props.children}
+                    </Link>
             </CustomizedFont>
         </SuperiorDiv>
     )

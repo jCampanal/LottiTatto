@@ -2,8 +2,7 @@
 import { useState,useEffect,useRef } from 'react'
 import styled from 'styled-components'
 import Section from "../Components/Section/Section"
-import{ FirstPicture} from "../assets/Photos/Photos"
-import {LottiTattoSVG,  TattooMachineSVG} from "../assets/SVG/SVG"
+import { TattooMachineSVG} from "../assets/SVG/SVG"
 import {FixedComponent} from "../Components/FixedComponent/FixedComponentStyled"
 import { Logo, TattooSectionPicture, DesignSectionPicture} from '../assets/Photos/Photos'
 import { LogoPicture } from '../Components/Picture/Picture'
@@ -11,26 +10,12 @@ import BlurDiv from "../Components/BlurDiv/BlurDiv"
 import {useIntersection} from 'react-use'
 import {getPhrases} from '../Services/Phrases'
 import {scale} from '../helper/helper'
+import {Header,BodyFullScreen} from '../Components/Sections/Sections'
 //#endregion 
 
 //#region Styled
 
 
-//#region Sections General
-const Header= styled.p`
-width:100%;
-padding:20px;
-text-align:${(props)=>(props.Align??"center")};
-font-size:27px;
-color:white;
-margin:0;
-`
-
-const BodyFullScreen=styled.div`
-width:100%;
-height:calc(100% - 80px);
-`
-//#endregion
 
 const MarkInformationContent=styled.div`
 padding:0.5rem 1rem;
@@ -367,11 +352,11 @@ function ServiceInformationSection(){
                 trabajos
             </Header>
             <ServiceElement
-                Src={ TattooSectionPicture[0].src}                 
+                Src={ TattooSectionPicture.src}                 
                 Title="Trabajo"
                 Body="Bla bla bla"/>
             <ServiceElement
-                Src={ DesignSectionPicture[0].src} 
+                Src={ DesignSectionPicture.src} 
                 Title="Diseños"
                 Body="Bla bla bla"/>  
         </ServiceInformationContent>
@@ -444,8 +429,7 @@ export function Home (props)
         threshold:0.01,
     })
 
-    useEffect(() => {     
-        console.log("Entro")  
+    useEffect(() => {       
         if(intersectionForBluLow)
                 setBlur(intersectionForBluLow.intersectionRatio);
         
@@ -488,6 +472,6 @@ export function Home (props)
     )
 }
 //#endregion
-
+export default Home
 
 

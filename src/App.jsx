@@ -1,8 +1,9 @@
-import { useState } from 'react'
-import {Home} from './Main/Home'
+//#region Imports
 import  Menu  from './Components/Menu/Menu'
 import { Logo } from './assets/Photos/Photos'
 import './App.css'
+import AppRoutes from './routes/routes'
+//#endregion
 
 function App() {
 
@@ -12,8 +13,9 @@ function App() {
 
   return (
     <>
-    <Menu/>
-    <Home/>
+    <Menu>
+    <AppRoutes />
+    </Menu>
     </>
 
        

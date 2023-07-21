@@ -12,6 +12,7 @@ import{
 
 import {LocalNavItems} from "./NavItems"
 import NavButton from "./NavButton"
+import styled from "styled-components";
 //#endregion
 
 //#region CSS with Styled
@@ -61,9 +62,28 @@ z-index:3;
 export const IconLink=Styled.a`
 margin:0 5px;`;
 
-export const MenuIcon=Styled.div`
+const MenuIcon=Styled.div`
 margin:0 5px;
 cursor:pointer;`;
+
+const Body=Styled.div`
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+position:absolute;
+width:100%;
+top:30px;
+left:0;
+min-height: calc(100% - 30px);
+background: linear-gradient(black 10%, rgb(255, 165, 0));
+scrollbar-width: none;
+overflow: hidden;
+}
+`;
+
+const InternLink=styled.a`
+decoration:none;`
 //#endregion
 
 //#region IconLink
@@ -122,9 +142,10 @@ const Menu=(props)=>{
                 </ColumnDiv>                    
             </DivS>
             <BackDrop
-                Open={IsOpenMenu}/>
+                Open={IsOpenMenu}
+                onClick={() => HandlerOpenMenu()}/>
             <NavigationMenu 
-                className="SideMenu"
+                onClick={() => HandlerOpenMenu()}
                 Open={IsOpenMenu}>
                     {LocalNavItems.map((n,i)=>{                                            
                                             return(
@@ -132,13 +153,17 @@ const Menu=(props)=>{
                                                 key={n.key}
                                                 Show={ElementAnimation}
                                                 Index={i+1}
+                                                Link={n.link}
                                                 Total={LocalNavItems.length}
                                                 >
                                                     {n.caption}
                                                 </NavButton>)
                                                 }
                                         )}
-            </NavigationMenu>            
+            </NavigationMenu>   
+            <Body>
+                {props.children}
+            </Body>
         </>
         );
 }

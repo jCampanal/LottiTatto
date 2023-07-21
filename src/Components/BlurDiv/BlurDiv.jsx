@@ -25,8 +25,7 @@ const BlurDiv=({MaxValue,MinValue,Value,children})=>{
         clearInterval(timerid)
 
         setTimerId(setTimeout(() => {            
-        console.log(blur)
-        setblur((((MaxValue-MinValue)*Value)+MinValue).toFixed(1))
+           setblur((((MaxValue-MinValue)*Value)+MinValue).toFixed(1))
         }, 1));
     }, [Value])
 

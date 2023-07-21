@@ -41,19 +41,21 @@ import DesignSection from './General/PrincesaMononoque.jpg'
 
 
 
-export const TattooSectionPicture=[
+export const TattooSectionPicture=
     {
         key: "TattooSectionPicture",
         src: TattooSection
     }
-]
 
-export const DesignSectionPicture=[
+
+export const DesignSectionPicture=
     {
         key: "DesignSectionPicture",
         src: DesignSection
     }
-]
+
+
+
 
 export const FirstPicture=[
     {
