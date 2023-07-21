@@ -54,7 +54,7 @@ max-width:300px;
 height:calc(100vh - 50px);
 background: #000;
 top:50px;
-right:${(props)=>(props.Open?'0':'-300px')};
+right:${(props)=>(props.Open?'0':'-400px')};
 transition: all 500ms;
 z-index:3;
 `;

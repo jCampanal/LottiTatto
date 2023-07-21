@@ -3,6 +3,7 @@ import  Menu  from './Components/Menu/Menu'
 import { Logo } from './assets/Photos/Photos'
 import './App.css'
 import AppRoutes from './routes/routes'
+import PictureView from './Components/PictureView/PictureView'
 //#endregion
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <>
+    <PictureView/>
     <Menu>
     <AppRoutes />
     </Menu>

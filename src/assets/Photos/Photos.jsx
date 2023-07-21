@@ -1,38 +1,29 @@
+//#region  Works Src
+import RocketAndGroot from './General/Works/RocketAndGroot.jpg'
+import Arquimides from './General/Works/Arquimides.jpg'
+import Espartano from './General/Works/Espartano.jpg'
+import Leon from './General/Works/Leon.jpg'
+import llorona from './General/Works/llorona.jpg'
+import EsculturaGriega from './General/Works/EsculturaGriega.jpg'
+//#endregion
+
 import Tattoo1_600 from './Photos600/Tattoo3_600x700.jpg'
-import Tattoo2_600 from './Photos600/Tattoo3_600x700.jpg'
-import Tattoo3_600 from './Photos600/Tattoo3_600x700.jpg'
 
 import Tattoo1_300 from './Photos300/Tattoo4_600x700.jpg'
-import Tattoo2_300 from './Photos300/Tattoo4_600x700.jpg'
-import Tattoo3_300 from './Photos300/Tattoo4_600x700.jpg'
 
 import Tattoo1_900 from './Photos900/Tattoo2_600x700.jpg'
-import Tattoo2_900 from './Photos900/Tattoo2_600x700.jpg'
-import Tattoo3_900 from './Photos900/Tattoo2_600x700.jpg'
 
 import Tattoo1_1200 from './Photos1200/Tattoo2_600x700.jpg'
-import Tattoo2_1200 from './Photos1200/Tattoo2_600x700.jpg'
-import Tattoo3_1200 from './Photos1200/Tattoo2_600x700.jpg'
 
 import Tattoo1_1500 from './Photos1500/Tattoo3_1600x700.jpg'
-import Tattoo2_1500 from './Photos1500/Tattoo3_1600x700.jpg'
-import Tattoo3_1500 from './Photos1500/Tattoo3_1600x700.jpg'
 
 import Tattoo1_1800 from './Photos1800/Tattoo3_1600x700.jpg'
-import Tattoo2_1800 from './Photos1800/Tattoo3_1600x700.jpg'
-import Tattoo3_1800 from './Photos1800/Tattoo3_1600x700.jpg'
 
 import Tattoo1_2100 from './Photos2100/Tattoo3_1600x700.jpg'
-import Tattoo2_2100 from './Photos2100/Tattoo3_1600x700.jpg'
-import Tattoo3_2100 from './Photos2100/Tattoo3_1600x700.jpg'
 
 import Tattoo1_2400 from './Photos2400/Tattoo3_1600x700.jpg'
-import Tattoo2_2400 from './Photos2400/Tattoo3_1600x700.jpg'
-import Tattoo3_2400 from './Photos2400/Tattoo3_1600x700.jpg'
 
 import Tattoo1_2700 from './Photos2700/Tattoo3_1600x700.jpg'
-import Tattoo2_2700 from './Photos2700/Tattoo3_1600x700.jpg'
-import Tattoo3_2700 from './Photos2700/Tattoo3_1600x700.jpg'
 
 import LogoSrc from "./Logo/LottiTattoLogo.png"
 
@@ -41,10 +32,11 @@ import DesignSection from './General/PrincesaMononoque.jpg'
 
 
 
+
 export const TattooSectionPicture=
     {
         key: "TattooSectionPicture",
-        src: TattooSection
+        src: EsculturaGriega
     }
 
 
@@ -105,3 +97,95 @@ export const FirstPicture=[
  export const Logo={
     Src: LogoSrc,
     key:"Logo"}
+
+
+//#region Works
+export const WorksPicture=[
+    {
+        Name:"Realismo",
+        Elements:
+        [
+            {
+                Src:RocketAndGroot,
+                Clasification:"Realismo",
+                InitDate:"5 de julio 2023",
+                FinishDate:"29 de julio 2023",
+                sesiones: "3",
+                colors: ["gray","yellow","red"]
+            },
+            {
+                Src:Arquimides,
+                Clasification:"Realismo",
+                InitDate:"5 de julio 2023",
+                FinishDate:"29 de julio 2023",
+                sesiones: "3",
+                colors: ["gray","yellow","red"]
+            },
+            {
+                Src:Espartano,
+                Clasification:"Realismo",
+                InitDate:"5 de julio 2023",
+                FinishDate:"29 de julio 2023",
+                sesiones: "3",
+                colors: ["gray","yellow","red"]
+            },
+            {
+                Src:Leon,
+                Clasification:"Realismo",
+                InitDate:"5 de julio 2023",
+                FinishDate:"29 de julio 2023",
+                sesiones: "3",
+                colors: ["gray","yellow","red"]
+            },
+            {
+                Src:llorona,
+                Clasification:"Realismo",
+                InitDate:"5 de julio 2023",
+                FinishDate:"29 de julio 2023",
+                sesiones: "3",
+                colors: ["gray","yellow","red"]
+            },            
+            {
+                Src:EsculturaGriega,
+                Clasification:"Realismo",
+                InitDate:"5 de julio 2023",
+                FinishDate:"29 de julio 2023",
+                sesiones: "3",
+                colors: ["gray","yellow","red"]
+            },
+        ]        
+    },
+   {
+        Name:"Subrealismo",
+        Elements:
+        [
+            {
+                Src:TattooSectionPicture.src,
+                Clasification:"Realismo",
+                InitDate:"5 de julio 2023",
+                FinishDate:"29 de julio 2023",
+                sesiones: "3",
+                colors: ["gray","yellow","red"]
+            },
+            {
+                Src:TattooSectionPicture.src,
+                Clasification:"Realismo",
+                InitDate:"5 de julio 2023",
+                FinishDate:"29 de julio 2023",
+                sesiones: "3",
+                colors: ["gray","yellow","red"]
+            },
+            {
+                Src:TattooSectionPicture.src,
+                Clasification:"Realismo",
+                InitDate:"5 de julio 2023",
+                FinishDate:"29 de julio 2023",
+                sesiones: "3",
+                colors: ["gray","yellow","red"]
+            }
+        ]
+    }
+    
+    
+]
+//#endregion

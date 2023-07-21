@@ -1,12 +1,12 @@
 //#region Imports
 import { combineReducers } from "@reduxjs/toolkit";
-import Imagen from './Imagen'
+import imagen from './Imagen'
 //#endregion
 
 //#region Reducer
 const createReducer = (asyncReducers) => (state, action) => {
     const combinedReducer = combineReducers({
-        Imagen,
+        imagen,
       ...asyncReducers,
     });
   

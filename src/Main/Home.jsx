@@ -303,7 +303,9 @@ width:60%;
 min-width:250px;
 max-width:400px;
 border-radius: 10px;
-border: 3px solid white`;
+border: 3px solid white;
+cursor:pointer;`
+;
 
 
 
@@ -420,7 +422,7 @@ export function Home (props)
     const intersectionForBluLow=useIntersection(sectionRef,{
         root:null,
         rootMargin:'0px',
-        threshold:[0, 0.25, 0.5, 0.75, 1]
+        threshold:[0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1]
     })
 
     const intersectionForBackground = useIntersection(sectionRef,{

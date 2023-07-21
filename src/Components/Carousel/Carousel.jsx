@@ -1,8 +1,11 @@
 //#region Imports
 import {useState,useRef,useEffect} from 'react'
+import { useDispatch,useSelector } from 'react-redux'
 import {motion} from 'framer-motion' 
 import styled from 'styled-components'
 import {MinimazedSVG,MaximazedSVG} from '../../assets/SVG/SVG'
+import {setOpenImagen, setContentImagen} from '../../store/Imagen/Imagen'
+import {selectOpen,selectContent} from '../../store/Imagen/Imagen'
 //#endregion
 
 //#region CaruselX
@@ -110,25 +113,24 @@ color:white;
  //#endregion
 
 const WorkCard=(props)=>{
-   const Card=useRef();   
+    const Card=useRef();   
     const [IsFullDetail,SetIsFullDetail]=useState(false)
-
+    const dispatch=useDispatch()
 
    const HandlerFullDetailOpen=()=>
-   {
-        setTimeout(()=>SetIsFullDetail(!IsFullDetail),300)
-        
+   {    
+        dispatch(setOpenImagen(true))
+        setTimeout(()=>dispatch(setContentImagen(props.Src)),100)
    }
 
     return(
             <CardContent FullDetail={IsFullDetail}>
                 <ImgContent src={props.Src}/>
                 <Capa>
-                    <MinimazedMaximazedButton  Show={!IsFullDetail} >
+                    <MinimazedMaximazedButton  
+                        onClick={HandlerFullDetailOpen}
+                        Show={true} >
                         <MaximazedSVG/>
-                    </MinimazedMaximazedButton>
-                    <MinimazedMaximazedButton  Show={IsFullDetail} >
-                        <MinimazedSVG/>
                     </MinimazedMaximazedButton>
                 </Capa>
             </CardContent>  
